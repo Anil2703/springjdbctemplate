@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+
+<bean id="triangle" class="com.anil.pack1.Triangle" autowire="byName">
+<property name="height" value="10"></property>
+<property name="type" value="Equilateral"></property>
+<property name="area" value="100"></property>
+<!-- <constructor-arg value="10"></constructor-arg>
+<constructor-arg value="Equilateral"></constructor-arg>
+<constructor-arg value="100"></constructor-arg> -->
+<!-- <property name="pointA" ref="point"></property> -->
+
+</bean>
+
+<bean id="pointA" class="com.anil.pack1.Point">
+<property name="a" value="10"></property>
+<property name="b" value="20"></property>
+</bean>
+</beans>
